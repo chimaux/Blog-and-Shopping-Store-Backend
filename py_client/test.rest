@@ -1,24 +1,23 @@
-###
-
-POST http://127.0.0.1:8000/api/login
+### LOGIN
+POST http://localhost:8000/myusers/login/
 Content-Type: application/json
+
 {
-"username":"coco",
-"password":"coco",
+"email":"tomiwa003@gmail.com",
+"password":"gangmilk"
 }
 
-###
 
-POST http://127.0.0.1:8000/api/signup
+### SIGNUP
+POST http://localhost:8000/myusers/signup/
 Content-Type: application/json
-{
-"username":"coco",
-"password":"coco",
-"email":"8comparable@rowdydow.com"
-}
 
-###
+{"first_name":"tomiwa","last_name":"jacobs","password":"gangmilk","email":"tomiwa003@gmail.com"}
 
-GET http://127.0.0.1:8000/api/test_token
+
+###TOKEN
+GET http://localhost:8000/myusers/test-token/
 Content-Type: application/json
+Authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzI2MTgwNzIwLCJpYXQiOjE3MjYxODA0MjAsImp0aSI6ImE3OGUzYTM0NGJkYjRjYjI5ZGI0ZDRjNTNjMGMwZTJkIiwidXNlcl9pZCI6M30.jagfhu12kRKge_cNJzP2G0d8fJuYBamNnIhX12Qr-WE
+
 {}
