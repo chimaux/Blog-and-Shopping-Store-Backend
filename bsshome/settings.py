@@ -27,7 +27,16 @@ SECRET_KEY = "django-insecure-v-kw2d98-h+agl*&123)l=s07^na&7(+p8jl5nu-=g&oz&7d9k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'bsshome.onrender.com',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://blog-and-shopping-store.vercel.app/"
+]
 
 
 # Application definition
